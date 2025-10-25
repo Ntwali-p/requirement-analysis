@@ -26,81 +26,41 @@ This repository is created as part of a learning project on **Requirement Analys
 ---
 
 ## Use Case Diagrams
-
-**Use Case Diagrams** are visual tools used in requirement analysis to show how users (actors) interact with a system. They illustrate the system’s functional requirements by highlighting different user roles and the actions they can perform.  
-
-Use case diagrams help simplify complex system behavior into an easy-to-understand model, making it clear who does what within the system.
-
-### **Benefits of Use Case Diagrams**
-- Provide a **visual overview** of system functionality and user interactions.  
-- Help identify **actors** (users or external systems) and their **goals**.  
-- Serve as a **communication bridge** between technical and non-technical stakeholders.  
-- Assist in defining the **system boundaries** and clarifying requirements before development.  
+*(... previous content unchanged ...)*
 
 ---
 
-### **Booking Management System — Use Case Diagram**
+## Acceptance Criteria
 
-Below is an example of a **Use Case Diagram** for a Booking Management System.  
+**Acceptance Criteria** are the predefined conditions that a software feature must meet to be accepted by stakeholders, clients, or end users. They clearly define the boundaries of a user story or requirement and establish a common understanding of what “done” means for that functionality.
 
-It represents the key actors and their interactions with the system.
+Acceptance criteria are essential in Requirement Analysis because they ensure that all project participants — developers, testers, and clients — have the same expectations for how a feature should behave. Well-defined criteria help prevent misunderstandings, guide testing, and confirm that the delivered product meets business goals.
 
-#### **Actors**
-- **Customer:** Creates, modifies, or cancels a booking.  
-- **Administrator:** Manages booking records, availability, and system reports.  
-- **Payment Gateway:** Processes payment transactions securely.  
-
-#### **Main Use Cases**
-- Create Booking  
-- Modify Booking  
-- Cancel Booking  
-- View Booking History  
-- Manage Availability  
-- Generate Reports  
-- Process Payment  
-
-### **Diagram:**
-
-![Booking Management System Use Case Diagram](alx-booking-uc.png)
+### **Importance of Acceptance Criteria**
+- **Clarity and Transparency:** Ensure that all stakeholders share a common understanding of the expected outcome.  
+- **Improved Testing and Validation:** Provide measurable standards for QA teams to verify that the system meets requirements.  
+- **Reduced Rework:** Prevent ambiguity or misinterpretation by defining what success looks like for each feature.  
+- **Supports Agile Development:** Serve as a basis for user story validation and sprint acceptance in agile workflows.  
 
 ---
 
-### **How to Create the Diagram (Instructions)**
+### **Example: Acceptance Criteria for the Checkout Feature (Booking Management System)**
 
-1. Open **[Draw.io](https://app.diagrams.net)** or a similar tool (Lucidchart, Creately, or Figma).  
-2. Choose **“Blank Diagram”** → name it `alx-booking-uc`.  
-3. Use **actors (stick figures)** to represent:
-   - Customer  
-   - Administrator  
-   - Payment Gateway  
-4. Add **use cases (ellipses)** for:
-   - Create Booking  
-   - Modify Booking  
-   - Cancel Booking  
-   - View Booking History  
-   - Manage Availability  
-   - Generate Reports  
-   - Process Payment  
-5. Connect each actor to their relevant use cases using solid lines.  
-6. Add a **system boundary box** labeled “Booking Management System.”  
-7. Export the diagram:  
-   - **File → Export As → PNG**  
-   - Save as: `alx-booking-uc.png`  
-8. Upload the PNG file to your GitHub repository root folder (`requirement-analysis/alx-booking-uc.png`).  
-9. Confirm it displays in the README by viewing the rendered Markdown preview.
+**Feature:** Checkout — Allows customers to finalize a booking by providing payment and confirmation details.
+
+#### **Acceptance Criteria**
+1. The system shall allow a customer to proceed to checkout after selecting a booking.  
+2. The checkout page shall display the booking summary (date, time, service, and total cost).  
+3. The user shall be able to enter valid payment details (credit card, mobile money, or PayPal).  
+4. The system shall validate payment information before processing.  
+5. Upon successful payment, the system shall generate a **booking confirmation number**.  
+6. A **confirmation email or SMS** shall be sent automatically to the customer.  
+7. If payment fails, an **error message** shall be displayed, and the user shall be prompted to retry or use another payment method.  
+8. The system shall securely record all transaction data in the booking database.
 
 ---
 
-### ✅ Commit Instructions
-
-Once the file and diagram are ready:
-
-1. Upload `alx-booking-uc.png` to your GitHub repo.  
-2. Open **README.md → Edit (✏️)**.  
-3. Paste the new **Use Case Diagrams** section (above).  
-4. Commit with a message:  
-   **“Added Use Case Diagram and linked image (alx-booking-uc.png)”**
-
----
-
-Would you like me to generate the **actual Draw.io diagram layout (XML code)** so you can import it directly into Draw.io and export as PNG easily?
+### **Summary**
+Acceptance Criteria act as a **bridge between requirements and validation**.  
+For the booking system, they ensure that every user interaction — such as checking out — delivers the exact behavior and experience that stakeholders expect.  
+They also make it easier for the QA team to test each feature objectively and confirm project success.
