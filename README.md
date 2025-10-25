@@ -61,3 +61,33 @@ Requirement Analysis involves several core activities that ensure a thorough und
 
 Each of these activities plays a vital role in transforming vague user expectations into precise, actionable, and testable software requirements.
 
+---
+
+## Types of Requirements
+
+In software development, requirements are generally categorized into two main types: **Functional Requirements** and **Non-functional Requirements**.  
+Both are crucial in defining what the system does and how it performs.
+
+### **1. Functional Requirements**
+
+Functional requirements describe **what the system should do** — the specific features, operations, and behaviors that fulfill user needs. They define how the system will respond to particular inputs or actions.
+
+#### **Examples (Booking Management System)**
+- The system shall allow users to **create new bookings** for services (e.g., rooms, appointments, or vehicles).  
+- The system shall enable users to **view, edit, or cancel bookings** through their dashboard.  
+- The system shall send **email or SMS confirmations** to customers after a successful booking.  
+- The system shall allow **administrators to manage availability** and update booking slots.  
+- The system shall generate **daily and monthly reports** of all completed and pending bookings.
+
+### **2. Non-functional Requirements**
+
+Non-functional requirements specify **how the system performs** its functions rather than what it does. These include performance, security, usability, reliability, and scalability — all of which impact the system’s quality and user experience.
+
+#### **Examples (Booking Management System)**
+- The system shall handle **at least 500 concurrent user sessions** without performance degradation.  
+- The system shall have **99.9% uptime** during business hours.  
+- The system shall encrypt all **user data and payment information** for security.  
+- The system’s **page load time shall not exceed 2 seconds** under normal conditions.  
+- The system shall be **mobile-responsive** and accessible across all modern browsers and devices.  
+
+In short, **functional requirements** define the *actions and behaviors* of the booking system, while **non-functional requirements** define the *quality standards* and *performance expectations* of those actions.
